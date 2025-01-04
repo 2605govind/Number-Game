@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <audio id="wonAudio" src="./game-character-140506.mp3"></audio>
+    <nav>
+        <div class="nav-left">
+            <div>
+                <span>From</span><input type="number" id="firstnumber">
+                <span>To</span><input type="number" id="secondnumber">
+            </div>
+            <div class="op">
+                <p id="speedtext">Speed</p>
+                <input type="range" id="numberspeed" min="10" max="100">
+            </div>
+        </div>
+        <div class="nav-middle">
+            <div>
+                <p id="count">Count: 0</p>
+                <!-- <p id="highest">highest: 0</p> -->
+            </div>
+            <p id="expre">----</p>
+        </div>
+        <div class="nav-right">
+
+            <div class="op-right">
+                <label><input type="checkbox" id="additionOp">+</label>
+                <label><input type="checkbox" id="subtractionOp">-</label>
+                <label><input type="checkbox" id="multiplicationOp">*</label>
+                <label><input type="checkbox" id="divisionOp">/</label>
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+
+    </div>
+
+    <script src="./script.js"> </script>
+</body>
+</html>
