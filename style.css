@@ -135,20 +135,12 @@ nav{
     }
 
     nav{
-        /* width: 100vw; */
-        padding: 10px 0;
-        /* height: 8vh; */
-        
-        /* overflow: hidden; */
+        position: relative;
+        padding: 3px 0;
+        /* height: 10vh; */
     }
 
-    .op-right{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 20vw;
-        justify-content: center;
-    }
+   
 
     #numberspeed{
         -webkit-appearance: none;
@@ -169,6 +161,9 @@ nav{
     }
 
     #count{
+        position: absolute;
+        top: 2px;
+        right: 5px;
         margin-left: 10px;
         font-weight: 400;
     }
@@ -177,13 +172,29 @@ nav{
         height: 92vh;
     }
 
-    .op-right{
-        padding: 5px 5px;
+    #expre{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-
+    .op-right{
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        padding: 0;
+    }
 
     .op-right label{
         margin-left: 5px;
+        font-size: 10px;
+        display: inline-flex;
+        align-items: center;
+
+    }
+
+    .op-right label input{
+        transform: scale(0.6)
     }
 }
