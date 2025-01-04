@@ -143,6 +143,17 @@ nav{
         /* height: 10vh; */
     }
 
+    .numberSelection{
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+
+    .op{
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+    }
     
 
     #numberspeed{
