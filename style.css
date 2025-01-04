@@ -121,6 +121,9 @@ nav{
     font-weight: 600;
 }
 
+#expre{
+    font-weight: 500;
+}
 
 @media (max-width: 720px) {
     .nav-left {
@@ -140,7 +143,7 @@ nav{
         /* height: 10vh; */
     }
 
-   
+    
 
     #numberspeed{
         -webkit-appearance: none;
@@ -174,9 +177,10 @@ nav{
 
     #expre{
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        font-weight: 500;
     }
 
     .op-right{
