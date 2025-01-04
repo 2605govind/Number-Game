@@ -51,6 +51,12 @@ nav{
     width: 100px;
 }
 
+#count{
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
 .op-right{
     user-select: none;
     /* border-bottom: 1px solid white; */
@@ -119,27 +125,34 @@ nav{
 @media (max-width: 720px) {
     .nav-left {
         flex-direction: column;
+        align-items: start;
+        font-size: 10px;
     }
 
     .nav-left input{
         font-size: 8px;
         width: 30px;
     }
-    .nav-left {
-        font-size: 10px;
-
-    }
 
     nav{
         /* width: 100vw; */
-        padding: 5px 0;
-        height: 5vh;
+        padding: 10px 0;
+        /* height: 8vh; */
+        
         /* overflow: hidden; */
+    }
+
+    .op-right{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 20vw;
+        justify-content: center;
     }
 
     #numberspeed{
         -webkit-appearance: none;
-        width: 200px; /* Adjust the width of the slider */
+        width: 100px; /* Adjust the width of the slider */
         height: 6px; /* Adjust the height of the slider track */
         background: #ccc; /* Track color */
         border-radius: 5px; /* Rounded edges for the track */
@@ -147,21 +160,28 @@ nav{
         overflow: hidden;
     }
 
+
     .nav-left .op{
         margin-left: 5px;
     }
+    .nav-left div{
+        margin-left: 5px;
+    }
+
+    #count{
+        margin-left: 10px;
+        font-weight: 400;
+    }
 
     #container{
-        height: 95vh;
+        height: 92vh;
     }
 
     .op-right{
         padding: 5px 5px;
     }
 
-    .nav-middle div p{
-        font-size: 8px;
-    }
+
 
     .op-right label{
         margin-left: 5px;
